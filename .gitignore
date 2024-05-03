@@ -1,0 +1,30 @@
+# Compiled files
+*.class
+*.o
+*.pyc
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Dependency directories
+node_modules/
+bower_components/
+venv/
+
+# IDE files
+.idea/
+.vscode/
+
+# Build output
+build/
+dist/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
