@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = hotelViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!!")
+            NavigationView {
+                List(viewModel.hotels) { hotel in
+                    Text(hotel.name)  // Assuming 'title' is a property of `hotel`
+                    Text("test")
+                }
+                .navigationTitle("Hotels")
+                .onAppear {
+                    viewModel.loadHotels()
+                }
+            }
         }
-        .padding()
-    }
 }
 
 #Preview {
