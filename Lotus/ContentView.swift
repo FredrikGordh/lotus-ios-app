@@ -1,29 +1,37 @@
-//
-//  ContentView.swift
-//  Lotus
-//
-//  Created by Fredrik Gordh Riseby on 4/28/24.
-//
-
 import SwiftUI
 
-struct ContentView: View {
-    @ObservedObject var viewModel = hotelViewModel()
-    
+struct CountriesListView: View {
+    @State private var countries: [Country] = []
+    @State private var errorMessage: String?
+
     var body: some View {
-            NavigationView {
-                List(viewModel.hotels) { hotel in
-                    Text(hotel.name)  // Assuming 'title' is a property of `hotel`
-                    Text("test")
+        NavigationView {
+            List(countries, id: \.id) { country in
+                VStack(alignment: .leading) {
+                    Text(country.name)
+                        .fontWeight(.bold)
+                    Text("Code: \(country.code)")
+                    Text("Currencies: \(country.currencyCodes.joined(separator: ", "))")
                 }
-                .navigationTitle("Hotels")
-                .onAppear {
-                    viewModel.loadHotels()
+            }
+            .navigationTitle("Countries")
+            .onAppear {
+                APIService.shared.fetchCountries { countries, error in
+                    DispatchQueue.main.async {
+                        if let countries = countries {
+                            self.countries = countries
+                        } else if let error = error {
+                            self.errorMessage = error.localizedDescription
+                        }
+                    }
                 }
             }
         }
+    }
 }
 
-#Preview {
-    ContentView()
+struct CountriesListView_Previews: PreviewProvider {
+    static var previews: some View {
+        CountriesListView()
+    }
 }

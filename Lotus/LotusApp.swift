@@ -11,7 +11,7 @@ import SwiftUI
 struct LotusApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CountriesListView()
         }
     }
 }

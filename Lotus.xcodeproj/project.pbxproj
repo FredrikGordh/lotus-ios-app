@@ -14,9 +14,8 @@
 		01BC0F462BDECCA7005BDE0A /* LotusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC0F452BDECCA7005BDE0A /* LotusTests.swift */; };
 		01BC0F502BDECCA7005BDE0A /* LotusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC0F4F2BDECCA7005BDE0A /* LotusUITests.swift */; };
 		01BC0F522BDECCA7005BDE0A /* LotusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC0F512BDECCA7005BDE0A /* LotusUITestsLaunchTests.swift */; };
-		01BC0F632BE80016005BDE0A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC0F622BE80016005BDE0A /* NetworkManager.swift */; };
-		01BC0F652BE80092005BDE0A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC0F642BE80092005BDE0A /* ViewModel.swift */; };
-		01BC0F672BE81537005BDE0A /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC0F662BE81537005BDE0A /* Hotel.swift */; };
+		01BC0F692BE95FF8005BDE0A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC0F682BE95FF8005BDE0A /* Country.swift */; };
+		01BC0F6B2BE96246005BDE0A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC0F6A2BE96246005BDE0A /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +46,8 @@
 		01BC0F4B2BDECCA7005BDE0A /* LotusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LotusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BC0F4F2BDECCA7005BDE0A /* LotusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotusUITests.swift; sourceTree = "<group>"; };
 		01BC0F512BDECCA7005BDE0A /* LotusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotusUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		01BC0F622BE80016005BDE0A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		01BC0F642BE80092005BDE0A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		01BC0F662BE81537005BDE0A /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		01BC0F682BE95FF8005BDE0A /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		01BC0F6A2BE96246005BDE0A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				01BC0F342BDECCA5005BDE0A /* LotusApp.swift */,
-				01BC0F622BE80016005BDE0A /* NetworkManager.swift */,
-				01BC0F642BE80092005BDE0A /* ViewModel.swift */,
-				01BC0F662BE81537005BDE0A /* Hotel.swift */,
+				01BC0F682BE95FF8005BDE0A /* Country.swift */,
+				01BC0F6A2BE96246005BDE0A /* APIService.swift */,
 				01BC0F362BDECCA5005BDE0A /* ContentView.swift */,
 				01BC0F382BDECCA7005BDE0A /* Assets.xcassets */,
 				01BC0F3A2BDECCA7005BDE0A /* Preview Content */,
@@ -266,10 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01BC0F672BE81537005BDE0A /* Hotel.swift in Sources */,
-				01BC0F632BE80016005BDE0A /* NetworkManager.swift in Sources */,
 				01BC0F372BDECCA5005BDE0A /* ContentView.swift in Sources */,
-				01BC0F652BE80092005BDE0A /* ViewModel.swift in Sources */,
+				01BC0F6B2BE96246005BDE0A /* APIService.swift in Sources */,
+				01BC0F692BE95FF8005BDE0A /* Country.swift in Sources */,
 				01BC0F352BDECCA5005BDE0A /* LotusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
